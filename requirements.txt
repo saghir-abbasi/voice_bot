@@ -1,0 +1,13 @@
+langchain
+langchain-google-genai 
+langchain-community
+pypdf
+streamlit
+speech_recognition
+gtts
+base64
+
+dataclasses
+langchain_core.prompts
+google.generativeai
+re
