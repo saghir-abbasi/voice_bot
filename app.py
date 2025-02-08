@@ -8,11 +8,14 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 import google.generativeai as genai
 import re
+import os
+from dotenv import load_dotenv
 
-# Configuration
-GEMINI_API_KEY = "AIzaSyBJ7p50gVeFIRVecnuDyOq---2RwVfGgdM"
-MODEL_NAME = "gemini-2.0-flash-exp"
-genai.configure(api_key=GEMINI_API_KEY)
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+MODEL_NAME = os.getenv("MODEL_NAME")
+
+# genai.configure(api_key=GOOGLE_API_KEY)
 
 @dataclass
 class AppState:
@@ -36,7 +39,7 @@ if "app_state" not in st.session_state:
 
 @st.cache_resource
 def load_model():
-    return ChatGoogleGenerativeAI(model=MODEL_NAME, api_key=GEMINI_API_KEY)
+    return ChatGoogleGenerativeAI(model=MODEL_NAME, api_key=GOOGLE_API_KEY)
 
 llm = load_model()
 
