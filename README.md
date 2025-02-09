@@ -26,6 +26,7 @@ Seamless voice-to-text and text-to-voice communication for smooth, real-time gui
 
 INSTALLATION INSTRUCTIONS
 
-save on local directory
-install all libraries from requirements.txt (pip install requirements.txt)
-run the app (streamlit run app.py)
+save on local directory.
+create and activate environment variable.
+install all libraries from requirements.txt (pip install requirements.txt).
+run the app (streamlit run app.py).
