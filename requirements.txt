@@ -1,9 +1,6 @@
-streamlit==1.21.0
-speechrecognition==3.8.1
-gtts==2.3.1
-langchain-google-genai==0.0.3
-langchain-core==0.0.5
-google-generativeai==0.0.3
-python-dotenv==1.0.0
-re==2.2.1  # regex is part of Python standard library
-pyaudio==0.2.11
+streamlit
+pyaudio
+wave
+speech_recognition
+gtts
+os
