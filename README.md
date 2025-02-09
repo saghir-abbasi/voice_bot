@@ -22,3 +22,9 @@ Strictly recipe-related responses—perfect for staying on track in the kitchen.
 
 🚀 Real-Time Interaction
 Seamless voice-to-text and text-to-voice communication for smooth, real-time guidance.
+
+
+INSTALLATION INSTRUCTIONS
+save on local directory
+install all libraries from requirements.txt (pip install requirements.txt)
+run the app (streamlit run app.py)
